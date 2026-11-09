@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Учебный сайт Полины: знакомство с веб-разработкой и первые проекты.">
+  <title>Полина — первые шаги в веб-разработке</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#about">Перейти к содержанию</a>
+  <header class="header container">
+    <a class="logo" href="#" aria-label="Полина, в начало страницы">п<span>.</span></a>
+    <nav aria-label="Основная навигация">
+      <a href="#about">Обо мне</a>
+      <a href="#projects">Проекты</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="hero" id="about" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">Личный учебный сайт / 01</p>
+        <h1 id="hero-title">Привет,<br>я Полина<span class="accent">.</span></h1>
+        <p class="intro">Учусь создавать сайты и превращать идеи в работающие веб-приложения. Здесь собираю первые проекты и наблюдаю за своим прогрессом.</p>
+        <a class="button" href="#projects">Посмотреть проекты <span aria-hidden="true">↗</span></a>
+      </div>
+      <aside class="note" aria-label="Сейчас изучаю">
+        <span class="note-number" aria-hidden="true">&lt;/&gt;</span>
+        <p class="eyebrow">Сейчас изучаю</p>
+        <h2>Как устроен веб</h2>
+        <p>От первой HTML-страницы до приложения с Python на сервере.</p>
+        <ul class="tags" aria-label="Технологии"><li>HTML</li><li>CSS</li><li>Python</li></ul>
+      </aside>
+    </section>
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading"><h2 id="projects-title">Учебные проекты</h2><span>01 — 02</span></div>
+      <p class="section-intro">Два проекта первой практики. Статусы отражают текущий этап работы.</p>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="card-top"><span class="project-number">01 / Frontend</span><span class="status">В работе</span></div>
+          <h3>Моя первая страница</h3>
+          <p>Адаптивная визитка на HTML и CSS. Следующие шаги — публикация на GitHub Pages и добавление JavaScript.</p>
+          <ul class="tags" aria-label="Технологии проекта"><li>HTML</li><li>CSS</li><li>GitHub Pages</li></ul>
+        </article>
+        <article class="project-card">
+          <div class="card-top"><span class="project-number">02 / Python</span><span class="status planned">В планах</span></div>
+          <h3>Лабиринт с решением</h3>
+          <p>Приложение будет создавать случайные лабиринты и находить кратчайший путь. Интерфейс — Gradio, алгоритмы — Python.</p>
+          <ul class="tags" aria-label="Технологии проекта"><li>Python</li><li>Gradio</li><li>BFS / DFS</li></ul>
+        </article>
+      </div>
+    </section>
+    <section class="contacts" id="contacts" aria-labelledby="contacts-title">
+      <div><p class="eyebrow">Будем на связи</p><h2 id="contacts-title">Мой код — на GitHub.</h2><p>Здесь будут появляться учебные работы и новые проекты.</p></div>
+      <a class="button button-dark" href="https://github.com/polinamaximenko">@polinamaximenko <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+  <footer class="footer container"><span>Полина / Учебное портфолио</span><span>Сделано с HTML и CSS · 2026</span></footer>
+</body>
+</html>
